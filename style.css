@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #e65b00;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    height: 15px;
+    width: 15px;
+    transition: all 0.3s;
+    transform: rotate(45deg);
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.menu {
+    width: 21rem;
+    margin-top: 10rem;
+}
+
+.select-btn {
+    display: flex;
+    height: 3.5rem;
+    background: #fff;
+    padding: 1.5rem;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.menu.active .arrow {
+    transition: all 0.3s;
+    transform: rotate(-135deg);
+}
+
+.options {
+    position: relative;
+    transition: all 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    background: #fff;
+}
+
+.menu.active .options {
+    display: block;
+}
+
+.option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 15px;
+    border-radius: 6px;
+    align-items: center;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    transform: translateX(5px);
+}
+
+.html:hover {
+    background: #f0cec0;
+}
+
+.css:hover {
+    background: #cad8f9;
+}
+
+.js:hover {
+    background: #ede7b3;
+}
+
+.react:hover {
+    background: #c1e7f2;
+}
+
+.option i {
+    font-size: 25px;
+    margin-right: 1rem;
+}
+
+.fa-html5 {
+    color: #e96228;
+}
+
+.fa-css3-alt {
+    color: #2862e9;
+}
+
+.fa-js {
+    color: #edd718;
+}
+
+.fa-react {
+    color: #5ed3f3;
+}
+
+.option-text {
+    font-size: 1.2rem;
+    color: #000;
+}

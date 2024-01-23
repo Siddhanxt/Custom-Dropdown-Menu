@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Custom Dropdown Menu </title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="select-btn">
+            <span class="chooseText"> Choose and option</span>
+            <div class="arrow"></div>
+        </div>
+
+        <ul class="options">
+            <li class="option html">
+                <i class="fa-brands fa-html5"></i>
+                <span class="option-text"> HTML Simplified PDF </span>
+            </li>
+            <li class="option css">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="option-text"> CSS Master PDF </span>
+            </li>
+            <li class="option js">
+                <i class="fa-brands fa-js"></i>
+                <span class="option-text"> JavaScript Doctory PDF </span>
+            </li>
+            <li class="option react">
+                <i class="fa-brands fa-react"></i>
+                <span class="option-text"> ReactJS CheatSheet </span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const selectMenu = document.querySelector(".menu");
+        const selectBtn = selectMenu.querySelector(".select-btn");
+
+        selectBtn.addEventListener("click", function () {
+            selectMenu.classList.toggle("active");
+        });
+
+    </script>
+
+</body>
+
+</html>
